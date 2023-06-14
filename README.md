@@ -1,6 +1,6 @@
-# calcultor
+# Calculator
 
-Calculator app usign flutter.
+Calculator app using flutter.
 
 ## Getting Started
 
