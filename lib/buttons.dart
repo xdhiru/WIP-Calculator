@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class button extends StatelessWidget {
 
   String button_value;
-  // Function button_function;
-  button(this.button_value, ); //this.button_function
+  Function button_function;
+  button(this.button_value, this.button_function); //
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0,10.0,10.0,10.0),
+      padding: const EdgeInsets.all(5),
       child: TextButton(
-        onPressed: (){}, //button_function
+        onPressed: (){button_function();}, //button_function
         style: ElevatedButton.styleFrom(
             padding: EdgeInsets.all(10),
             backgroundColor: Colors.indigo[100],
